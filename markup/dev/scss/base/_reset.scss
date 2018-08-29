@@ -1,0 +1,41 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+* {
+  max-height: 1000000px;
+}
+
+body {
+  font-family: $base-font-family;
+  background: $base-background-color;
+  font-size: $font-size-base;
+  min-width: $base-min-width;
+
+
+  @include media("<desktop") {
+      p {
+      font-size: 14px;
+    }
+
+    h2 {
+      font-size: 24px;
+    }
+
+  }
+
+  @include media("<phone") {
+    font-size: 16px;
+  }
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

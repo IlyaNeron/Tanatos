@@ -1,0 +1,22 @@
+.site-caption {
+  color: $white;
+  font-weight: $h2-weight;
+  font-size: 35px;
+  text-transform: uppercase;
+
+}
+
+.caption-element {
+  color: $orange;
+}
+
+.lists-caption {
+  font-size: $h3-font-size;
+  text-transform: $h-transform;
+  font-weight: $h3-weight;
+}
+
+h1, h2, h3 {
+  margin: $h-margin-def;
+}
+

@@ -1,0 +1,13 @@
+.container {
+  max-width: $base-max-width;
+  margin: 0 auto;
+  padding: $base-padding;
+  display: flex;
+}
+
+.container-sm {
+  max-width: $sm-max-width;
+  margin: 0 auto;
+  padding: $sm-padding;
+  display: flex;
+}

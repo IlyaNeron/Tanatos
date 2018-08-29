@@ -1,0 +1,89 @@
+
+$breakpoints: (
+  "xs-phone": 480px,
+  "phone": 768px,
+  "tablet": 1024px,
+  "desktop": 1200px,
+  "widescreen": 1800px
+);
+
+// keywords
+$media-expressions: (
+  "screen": "screen",
+  "print": "print",
+  "handheld": "handheld",
+  "landscape": "(orientation: landscape)",
+  "portrait": "(orientation: portrait)",
+  "retina2x": "(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)",
+  "retina3x": "(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)"
+);
+
+// ligatured operators ≥ ≤
+
+// Colors
+$white: #fff;
+$black: #333;
+$orange: #f7600e;
+
+// Fonts
+$base-font-family: 'Open Sans';
+
+// Body
+$base-text-color: $black !default;
+$base-background-color: $white !default;
+$font-size-base: 14px !default;
+$font-weight-base: 400;
+$line-height-base: 1.5 !default;
+$base-min-width: 320px;
+
+// Container
+$base-max-width: 1075px;
+$base-padding: 0 15px;
+$sm-max-width: 860px;
+$sm-padding: 0 15px;
+
+// Links
+
+// Buttons
+$btn-color: $white !default;
+$btn-border-radius: 10px !default;
+$btn-padding: 10px 70px !default;
+$btn-font-size: 16px !default;
+$btn-font-weight: 400 !default;
+$btn-line-height: 1 !default;
+
+// Forms
+$form-input-padding: 10px 10px 10px 25px !default;
+$form-input-font-size: 16px !default;
+$form-input-line-height: 1 !default;
+$form-input-font-weight: 300 !default;
+$form-input-border-radius: 10px;
+$form-input-width: 100%;
+$placeholder-color: $black !default;
+$forms-base-transition: box-shadow 0.3s linear;
+
+// Headers
+$h1-font-size: 48px !default;
+$h2-font-size: 35px !default;
+$h3-font-size: 16px !default;
+$headings-font-family: $base-font-family !default;
+$headings-color: $black !default;
+$h-transform: uppercase;
+$h3-weight: 600;
+$h2-weight: 600;
+$h3-hover-color: $orange;
+$h-margin-def: 0 0 30px 0;
+
+// span
+$base-span-color: $orange;
+
+// p
+$base-text-color: $black;
+$base-text-line-height: 1.8;
+$base-text-font-size: 14px;
+$base-text-margin: 0 0 15px;
+
+// ul
+$base-lists-padding: 0px;
+$base-lists-margin: 0;
+$base-lists-style: none;

@@ -1,0 +1,92 @@
+.carousel-section {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #444a52;
+    opacity: 0.9;
+  }
+
+  .carousel-items {
+    display: flex;
+    z-index: 2;
+    @include lists-reset;
+
+    & li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      .items-image {
+        padding-bottom: 45px;
+      }
+
+      .items-description {
+
+        blockquote {
+          font-style: italic;
+          color: $white;
+          font-size: 25px;
+          margin-bottom: 50px;
+          line-height: 1.8;
+        }
+
+        a {
+          color: $white;
+          text-decoration: none;
+          font-size: 18px;
+        }
+
+      }
+
+    }
+
+  }
+
+  .left-arrow-button {
+    position: absolute;
+    top: 55%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    color: #767676;
+    font-size: 48px;
+    z-index: 2;
+    transition: color 0.3s linear;
+
+    &:hover {
+      color: $orange;
+    }
+
+  }
+
+  .right-arrow-button {
+    position: absolute;
+    top: 55%;
+    right: 8%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    color: #767676;
+    font-size: 48px;
+    z-index: 2;
+    transition: color 0.3s linear;
+
+    &:hover {
+      color: $orange;
+    }
+
+  }
+
+}

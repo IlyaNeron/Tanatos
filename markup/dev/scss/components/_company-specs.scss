@@ -1,0 +1,63 @@
+.company-specs {
+  padding: 100px 0;
+}
+
+.list-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @include lists-reset;
+
+  & li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 18%;
+    align-items: center;
+    padding: 0 15px 15px 15px;
+
+    .image-wrapper {
+      border: 1px solid #c6c8ca;
+      border-radius: 50%;
+      margin: 0 0 30px;
+      width: 150px;
+      height: 150px;
+      display: flex;
+
+      & a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+
+    }
+
+  }
+
+}
+
+
+@include media("<tablet") {
+
+  .list-items li {
+    width: 50%;
+  }
+
+}
+
+@include media("<xs-phone") {
+
+  .list-items li {
+    width: 100%;
+  }
+
+}
+
+@include media("<phone") {
+
+  .list-items li {
+    padding: 0 0 15px 0;
+  }
+
+}

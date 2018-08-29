@@ -1,0 +1,161 @@
+.company-products {
+  padding: 100px 0;
+}
+
+.products-block-wrapper {
+  flex-direction: column;
+  align-items: center;
+
+  .content-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 470px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 85px;
+
+    h2 {
+      color: $black;
+    }
+
+  }
+
+  .content-items {
+    @include lists-reset;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+
+
+    & li {
+      width: 33.3333%;
+      padding: 0 15px 15px 15px;
+      display: flex;
+      justify-content: center;
+
+      a {
+        display: block;
+        width: 100%;
+      }
+
+      .item-wrapper {
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        img {
+          width: 100%;
+        }
+
+        &:hover .item-description {
+          opacity: 1;
+          visibility: visible;
+          z-index: 2;
+          border-radius: 10px;
+        }
+
+      }
+
+      .item-description {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        text-align: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s linear, visibility 0.3s linear,;
+        border-radius: 10px;
+        z-index: 2;
+        cursor: pointer;
+
+        &:after {
+          content: '';
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          background-color: $orange;
+          opacity: 0.9;
+          z-index: -1;
+          border-radius: 10px;
+        }
+
+        button {
+          color: $black;
+          width: 100%;
+          background-color: $white;
+
+
+           &:hover {
+            color: $orange;
+          }
+
+        }
+
+        h3 {
+          margin: 0 0 15px;
+          color: $white;
+        }
+
+        p {
+          margin: 0 0 50px;
+          color: $white;
+        }
+
+      }
+
+    }
+
+  }
+
+  button {
+    color: #3b434c;
+    width: 20%;
+
+    &:hover {
+      color: $white;
+    }
+
+  }
+
+}
+
+@include media("<tablet") {
+
+  .products-block-wrapper .content-items li {
+    width: 50%;
+  }
+
+}
+
+@include media("<phone") {
+
+  .products-block-wrapper .content-items li {
+    width: 100%;
+    padding: 0 0 15px;
+
+    .item-wrapper {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+
+    }
+
+  }
+
+  .products-block-wrapper button {
+    width: 100%;
+  }
+
+}

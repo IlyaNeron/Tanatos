@@ -1,0 +1,50 @@
+.burger-menu {
+  display: flex;
+  align-items: center;
+
+  &-name {
+    color: $white;
+    padding-right: 10px;
+  }
+
+  &-button {
+    display: flex;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    justify-content: center;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 8px;
+        width: 20px;
+        height: 1px;
+        background: $white;
+        display: block;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 1px;
+        background: $white;
+        display: block;
+        bottom: 7px;
+      }
+
+    & span {
+      display: block;
+      width: 20px;
+      height: 1px;
+      position: absolute;
+      background: $white;
+      transition: 0.3s;
+
+    }
+
+  }
+
+}

@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon/icomoon.eot?lh85kl');
+  src:  url('../fonts/icomoon/icomoon.eot?lh85kl#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.ttf?lh85kl') format('truetype'),
+    url('../fonts/icomoon/icomoon.woff?lh85kl') format('woff'),
+    url('../fonts/icomoon/icomoon.svg?lh85kl#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-left-arrow:before {
+  content: "\e906";
+}
+.icon-right-arrow:before {
+  content: "\e907";
+}
+.icon-arrow-down:before {
+  content: "\e905";
+}
+.icon-facebook:before {
+  content: "\e900";
+}
+.icon-twitter:before {
+  content: "\e901";
+}
+.icon-google:before {
+  content: "\e902";
+}
+.icon-behance:before {
+  content: "\e903";
+}
+.icon-dribble:before {
+  content: "\e904";
+}

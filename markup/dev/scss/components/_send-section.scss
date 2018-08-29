@@ -1,0 +1,146 @@
+.send-section {
+  position: relative;
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #444a52;
+    opacity: 0.9;
+  }
+
+  .send-block-wrapper {
+    flex-direction: column;
+    z-index: 2;
+    align-items: center;
+
+    .content-head {
+      text-align: center;
+      padding-bottom: 100px;
+      max-width: 470px;
+
+      p {
+        color: $white;
+      }
+
+      .site-caption {
+        color: $white;
+      }
+
+    }
+
+    .send-form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-bottom: 30px;
+
+        .col {
+          width: 100%;
+
+          &:not(:last-child) {
+            padding-right: 30px;
+          }
+
+        }
+
+      }
+
+      .col-lg {
+        width: 100%;
+        padding: 0 0 30px 0;
+
+
+        textarea {
+          min-height: 200px;
+          font-family: 'Lato';
+          font-size: 16px;
+          max-width: 1045px;
+          min-width: 100%;
+          max-height: 500px;
+          min-height: 200px;
+          overflow-x: hidden;
+        }
+
+      }
+
+      button {
+        width: 26%;
+        margin: 0;
+      }
+
+      &-footer {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        .social-ico {
+          @include lists-reset;
+          display: flex;
+          align-items: center;
+
+          & li {
+            border-radius: 50%;
+
+            &:not(:first-child) {
+              padding-left: 20px;
+            }
+
+            & a {
+              text-decoration: none;
+              background-color: $white;
+              display: block;
+              font-size: 30px;
+              border-radius: 50%;
+            }
+
+            .dribble {
+              color: #ff72a5;
+            }
+
+            .behance {
+              color: #009bd5;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+
+@include media("<xs-phone") {
+
+  .send-section .send-block-wrapper .send-form .input-wrapper {
+    width: 100%;
+  }
+  
+}
+
+@include media("<phone") {
+  .send-section .send-block-wrapper .send-form button {
+    width: 100%;
+    margin-right: 30px;
+  }
+}

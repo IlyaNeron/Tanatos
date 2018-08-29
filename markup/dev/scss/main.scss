@@ -1,0 +1,36 @@
+// vendors
+@import 'vendors/normalize';
+@import 'vendors/include-media';
+@import 'vendors/icomoon';
+
+// base
+@import 'base/variables';
+@import 'base/reset';
+@import 'base/buttons';
+@import 'base/mixins';
+@import 'base/helpers';
+@import 'base/forms';
+@import 'base/typography';
+@import 'base/text';
+
+
+// components 
+@import 'components/burger-menu';
+@import 'components/logo';
+@import 'components/header-inf';
+@import 'components/header-inf-block';
+@import 'components/company-specs';
+@import 'components/sub-section';
+@import 'components/company-products';
+@import 'components/carousel-section';
+@import 'components/send-section';
+@import 'components/prof-section';
+
+
+// layouts
+@import 'layouts/wrapper';
+@import 'layouts/header';
+@import 'layouts/footer';
+@import 'layouts/containers';
+
+

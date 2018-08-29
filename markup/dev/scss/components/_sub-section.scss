@@ -1,0 +1,61 @@
+.sub-section {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+  padding: 100px 0;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #444a52;
+    opacity: 0.9;
+  }
+
+}
+
+  .sub-form-wrapper {
+    justify-content: center;
+  }
+
+  .sub-form {
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    width: 100%;
+
+    button {
+      width: 46%;
+      margin-left: 30px;
+    }
+
+  }
+
+
+@include media("<phone") {
+
+  .sub-section .sub-form {
+    flex-direction: column;
+
+  }
+
+  .sub-form {
+
+    input {
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+
+    button {
+      width: 100%;
+      margin: 0;
+    }
+
+  }
+
+}

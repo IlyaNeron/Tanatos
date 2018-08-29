@@ -1,0 +1,39 @@
+.buttons-block {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  border-radius: 10px;
+  font-size: 16px;
+  color: $white;
+  border: 1px solid #d8d9db;
+  max-width: 100%;
+  width: 100%;
+  padding: 15px 0;
+  transition: background-color 0.3s linear, border-color 0.3s linear, color 0.3s linear;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $orange;
+    border-color: $orange;
+  }
+
+}
+
+.button_2 {
+  background-color: $orange;
+  border: 1px solid $orange;
+
+  &:hover {
+    background-color: $white;
+    border-color: $white;
+    color: $orange;
+  }
+
+}
+
+
