@@ -1142,6 +1142,33 @@ p {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+  .user-inf-wrapper .radio-buttons {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    margin: 0; }
+    .user-inf-wrapper .radio-buttons li:not(:last-child) {
+      padding-right: 10px; }
+    .user-inf-wrapper .radio-buttons li a {
+      display: block;
+      width: 10px;
+      height: 10px;
+      background-color: #c4c6c9;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      -webkit-transition: background-color 0.3s linear, -webkit-transform 0.3s linear;
+      transition: background-color 0.3s linear, -webkit-transform 0.3s linear;
+      -o-transition: background-color 0.3s linear, transform 0.3s linear;
+      transition: background-color 0.3s linear, transform 0.3s linear;
+      transition: background-color 0.3s linear, transform 0.3s linear, -webkit-transform 0.3s linear; }
+      .user-inf-wrapper .radio-buttons li a:hover {
+        background-color: #f7600e;
+        -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+                transform: scale(1.2); }
 
 .user-inf-content {
   display: -webkit-box;
@@ -1154,20 +1181,77 @@ p {
   width: 100%;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+          flex-wrap: wrap;
+  padding-bottom: 100px; }
   .user-inf-content .user-info-item {
     width: 25%;
-    padding: 0 15px 15px 15px; }
+    padding: 0 15px 15px 15px;
+    -webkit-transition: -webkit-filter 0.3s linear;
+    transition: -webkit-filter 0.3s linear;
+    -o-transition: filter 0.3s linear;
+    transition: filter 0.3s linear;
+    transition: filter 0.3s linear, -webkit-filter 0.3s linear;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    -webkit-filter: #c4c6c9;
+            filter: #c4c6c9; }
+    .user-inf-content .user-info-item a {
+      text-decoration: none;
+      display: block; }
+    .user-inf-content .user-info-item:hover {
+      -webkit-filter: none;
+              filter: none; }
+      .user-inf-content .user-info-item:hover .item-image {
+        -webkit-transition: -webkit-transform 0.3s linear;
+        transition: -webkit-transform 0.3s linear;
+        -o-transition: transform 0.3s linear;
+        transition: transform 0.3s linear;
+        transition: transform 0.3s linear, -webkit-transform 0.3s linear;
+        -webkit-transform: scale(1.1, 1.1);
+            -ms-transform: scale(1.1, 1.1);
+                transform: scale(1.1, 1.1);
+        -webkit-transform-origin: bottom;
+            -ms-transform-origin: bottom;
+                transform-origin: bottom; }
+        .user-inf-content .user-info-item:hover .item-image:after {
+          content: '';
+          height: 5px;
+          width: 100%;
+          position: absolute;
+          background-color: #f7600e;
+          bottom: 15px;
+          -webkit-border-radius: 10px;
+                  border-radius: 10px; }
+      .user-inf-content .user-info-item:hover .item-description p {
+        color: #333;
+        -webkit-transition: color 0.3s linear;
+        -o-transition: color 0.3s linear;
+        transition: color 0.3s linear; }
+      .user-inf-content .user-info-item:hover .item-description h3 {
+        color: #333;
+        -webkit-transition: color 0.3s linear;
+        -o-transition: color 0.3s linear;
+        transition: color 0.3s linear; }
     .user-inf-content .user-info-item .item-image {
       width: 100%;
-      padding-bottom: 15px; }
+      padding-bottom: 15px;
+      -webkit-transition: -webkit-transform 0.3s linear;
+      transition: -webkit-transform 0.3s linear;
+      -o-transition: transform 0.3s linear;
+      transition: transform 0.3s linear;
+      transition: transform 0.3s linear, -webkit-transform 0.3s linear; }
       .user-inf-content .user-info-item .item-image img {
-        width: 100%; }
+        width: 100%;
+        display: block; }
     .user-inf-content .user-info-item .item-description h3 {
       text-transform: uppercase;
       font-size: 25px;
       font-weight: 600;
-      text-align: center; }
+      text-align: center;
+      color: #c4c6c9;
+      -webkit-transition: color 0.3s linear;
+      -o-transition: color 0.3s linear;
+      transition: color 0.3s linear; }
     .user-inf-content .user-info-item .item-description .soc-icons {
       display: -webkit-box;
       display: -webkit-flex;
@@ -1195,7 +1279,11 @@ p {
         .user-inf-content .user-info-item .item-description .soc-icons li .icon-google {
           color: #ff3921; }
     .user-inf-content .user-info-item .item-description p {
-      text-align: center; }
+      text-align: center;
+      color: #c4c6c9;
+      -webkit-transition: color 0.3s linear;
+      -o-transition: color 0.3s linear;
+      transition: color 0.3s linear; }
 
 @media (max-width: 1023px) {
   .user-inf-content .user-info-item {

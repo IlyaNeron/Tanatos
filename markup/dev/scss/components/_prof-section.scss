@@ -17,6 +17,36 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+
+  .radio-buttons {
+    display: flex;
+    @include lists-reset;
+
+    li:not(:last-child) {
+      padding-right: 10px;
+    }
+
+    li {
+
+      a {
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-color: #c4c6c9;
+        border-radius: 50%;
+        transition: background-color 0.3s linear, transform 0.3s linear;
+
+        &:hover {
+          background-color: $orange;
+          transform: scale(1.2);
+        }
+
+      }
+
+    }
+
+  }
+
 }
 
 .user-inf-content {
@@ -24,17 +54,60 @@
   @include lists-reset;
   width: 100%;
   flex-wrap: wrap;
+  padding-bottom: 100px;
 
   .user-info-item {
     width: 25%;
     padding: 0 15px 15px 15px;
+    transition: filter 0.3s linear;
+    filter: grayscale(100%);
+    filter: #c4c6c9;
+
+    a {
+      text-decoration: none;
+      display: block;
+    }
+
+    &:hover {
+      filter: none;
+
+      & .item-image {
+        transition: transform 0.3s linear;
+        transform: scale(1.1, 1.1);
+        transform-origin: bottom;
+
+        &:after {
+          content: '';
+          height: 5px;
+          width: 100%;
+          position: absolute;
+          background-color: $orange;
+          bottom: 15px;
+          border-radius: 10px;
+        }
+
+      }
+
+      & .item-description p {
+        color: $black;
+        transition: color 0.3s linear;
+      }
+
+      & .item-description h3 {
+        color: $black;
+        transition: color 0.3s linear;
+      }
+
+    }
 
     .item-image {
       width: 100%;
       padding-bottom: 15px;
+      transition: transform 0.3s linear;
 
       img {
         width: 100%;
+        display: block;
       }
 
     }
@@ -46,6 +119,8 @@
         font-size: 25px;
         font-weight: $h3-weight;
         text-align: center;
+        color: #c4c6c9;
+        transition: color 0.3s linear;
       }
 
       .soc-icons {
@@ -84,6 +159,8 @@
 
       p {
         text-align: center;
+        color: #c4c6c9;
+        transition: color 0.3s linear;
       }
 
     }
