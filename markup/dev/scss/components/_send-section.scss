@@ -21,8 +21,9 @@
 
   .send-block-wrapper {
     flex-direction: column;
-    z-index: 2;
+    z-index: 1;
     align-items: center;
+    position: relative;
 
     .content-head {
       text-align: center;
@@ -88,41 +89,40 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
-
-        .social-ico {
-          @include lists-reset;
-          display: flex;
-          align-items: center;
-
-          & li {
-            border-radius: 50%;
-
-            &:not(:first-child) {
-              padding-left: 20px;
-            }
-
-            & a {
-              text-decoration: none;
-              background-color: $white;
-              display: block;
-              font-size: 30px;
-              border-radius: 50%;
-            }
-
-            .dribble {
-              color: #ff72a5;
-            }
-
-            .behance {
-              color: #009bd5;
-            }
-
-          }
-
-        }
-
       }
 
+    }
+
+  }
+
+}
+
+.social-ico {
+  @include lists-reset;
+  display: flex;
+  align-items: center;
+
+  & li {
+    border-radius: 50%;
+
+    &:not(:first-child) {
+      padding-left: 20px;
+    }
+
+    & a {
+      text-decoration: none;
+      background-color: $white;
+      display: block;
+      font-size: 30px;
+      border-radius: 50%;
+    }
+
+    .dribble {
+      color: #ff72a5;
+    }
+
+    .behance {
+      color: #009bd5;
     }
 
   }

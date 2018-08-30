@@ -61,7 +61,6 @@
     padding: 0 15px 15px 15px;
     transition: filter 0.3s linear;
     filter: grayscale(100%);
-    filter: #c4c6c9;
 
     a {
       text-decoration: none;
@@ -74,10 +73,11 @@
       & .item-image {
         transition: transform 0.3s linear;
         transform: scale(1.1, 1.1);
-        transform-origin: bottom;
+        transform-origin: 50% 100%;
 
         &:after {
-          content: '';
+          
+          // content: '';
           height: 5px;
           width: 100%;
           position: absolute;
@@ -123,46 +123,57 @@
         transition: color 0.3s linear;
       }
 
-      .soc-icons {
-        display: flex;
-        @include lists-reset;
-        justify-content: center;
-        padding-bottom: 30px;
-
-        li {
-          width: inherit;
-
-          &:not(:last-child) {
-            padding:0 15px 0 0;
-          }
-
-          a {
-            text-decoration: none;
-            font-size: 30px;
-          }
-
-          .icon-facebook {
-            color: #205b9f
-          }
-
-          .icon-twitter {
-            color: #00ace3;
-          }
-
-          .icon-google {
-            color: #ff3921;
-          }
-
-        }
-
-      }
-
       p {
         text-align: center;
         color: #c4c6c9;
         transition: color 0.3s linear;
       }
 
+    }
+
+  }
+
+}
+
+.soc-icons {
+  display: flex;
+  @include lists-reset;
+  justify-content: center;
+  padding-bottom: 30px;
+
+  li {
+    width: inherit;
+
+    &:not(:last-child) {
+      padding:0 15px 0 0;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 30px;
+      display: block;
+      border-radius: 50%;
+      background-color: #fff;
+    }
+
+    .icon-facebook {
+      color: #205b9f
+    }
+
+    .icon-twitter {
+      color: #00ace3;
+    }
+
+    .icon-google {
+      color: #ff3921;
+    }
+
+    .icon-dribble {
+      color: #ff72a5;
+    }
+
+    .icon-behance {
+      color: #009bd5;
     }
 
   }

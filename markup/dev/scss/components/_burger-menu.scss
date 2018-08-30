@@ -14,6 +14,8 @@
     height: 30px;
     position: relative;
     justify-content: center;
+    transition: transform 0.3s linear, opacity 0.3s linear;
+    cursor: pointer;
 
     &:before {
         content: '';
@@ -23,6 +25,7 @@
         height: 1px;
         background: $white;
         display: block;
+        transition: transform 0.3s linear;
       }
 
       &:after {
@@ -33,6 +36,7 @@
         background: $white;
         display: block;
         bottom: 7px;
+        transition: transform 0.3s linear;
       }
 
     & span {
@@ -41,7 +45,96 @@
       height: 1px;
       position: absolute;
       background: $white;
-      transition: 0.3s;
+      transition: opacity 0.3s linear;
+    }
+
+    &:hover {
+
+      & span {
+        opacity: 0;
+      }
+
+      &:after {
+        transform: rotate(-45deg);
+        top: 50%;
+
+      }
+
+      &:before {
+        transform: rotate(45deg);
+        top: 50%;
+
+      }
+      
+    }
+
+  }
+
+  .burger-menu-drop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    z-index: 4;
+    transform: translateX(100%);
+    visibility: hidden;
+    transition: transform 0.3s linear;
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: #3b434c;
+    }
+
+    .drop-content {
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      flex-direction: column;
+      z-index: 4;
+
+      .nav-menu {
+        @include lists-reset;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 115px;
+
+        &:after {
+          content: '';
+          width: 170px;
+          height: 1px;
+          background-color: $orange;
+          margin: 55px auto 0 auto;
+        }
+
+        li {
+
+          &:not(:last-child) {
+            padding-bottom: 40px;
+          }
+
+          a {
+            font-size: 35px;
+            color: $white;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-decoration: none;
+          }
+
+        }
+
+      }
 
     }
 
