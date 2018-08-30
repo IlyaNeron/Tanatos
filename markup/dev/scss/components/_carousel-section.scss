@@ -55,10 +55,9 @@
 
   }
 
-  .left-arrow-button {
+  .arrow-button {
     position: absolute;
     top: 55%;
-    left: 10%;
     transform: translate(-50%, -50%);
     text-decoration: none;
     color: #767676;
@@ -73,20 +72,19 @@
   }
 
   .right-arrow-button {
-    position: absolute;
-    top: 55%;
-    right: 8%;
-    transform: translate(-50%, -50%);
-    text-decoration: none;
-    color: #767676;
-    font-size: 48px;
-    z-index: 2;
-    transition: color 0.3s linear;
+    right: 0;
+  }
 
-    &:hover {
-      color: $orange;
-    }
+  .left-arrow-button {
+    left: 0;
+  }
 
+}
+
+@include media("<phone") {
+  
+  .carousel-section .carousel-items li .items-description blockquote {
+    font-size: 18px;
   }
 
 }

@@ -948,10 +948,9 @@ p {
         color: #fff;
         text-decoration: none;
         font-size: 18px; }
-  .carousel-section .left-arrow-button {
+  .carousel-section .arrow-button {
     position: absolute;
     top: 55%;
-    left: 10%;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -962,24 +961,16 @@ p {
     -webkit-transition: color 0.3s linear;
     -o-transition: color 0.3s linear;
     transition: color 0.3s linear; }
-    .carousel-section .left-arrow-button:hover {
+    .carousel-section .arrow-button:hover {
       color: #f7600e; }
   .carousel-section .right-arrow-button {
-    position: absolute;
-    top: 55%;
-    right: 8%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    text-decoration: none;
-    color: #767676;
-    font-size: 48px;
-    z-index: 2;
-    -webkit-transition: color 0.3s linear;
-    -o-transition: color 0.3s linear;
-    transition: color 0.3s linear; }
-    .carousel-section .right-arrow-button:hover {
-      color: #f7600e; }
+    right: 0; }
+  .carousel-section .left-arrow-button {
+    left: 0; }
+
+@media (max-width: 767px) {
+  .carousel-section .carousel-items li .items-description blockquote {
+    font-size: 18px; } }
 
 .send-section {
   position: relative;
@@ -1292,7 +1283,8 @@ p {
 
 @media (max-width: 767px) {
   .user-inf-content .user-info-item {
-    width: 100%; } }
+    width: 100%;
+    padding: 0 0 15px 0; } }
 
 .wrapper {
   position: relative;
