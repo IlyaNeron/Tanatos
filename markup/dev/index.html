@@ -65,10 +65,10 @@
       </div>
     </header>
     <main>
-      <section class="header-inf" style="background-image: url('img/photo-background.png');">
+      <section class="info-section" style="background-image: url('img/photo-background.png');">
         <div class="container">
-          <div class="header-inf-block">
-            <h1 class="site-caption">we design <span class="caption-element">things</span></h1>
+          <div class="info-section-content">
+            <h1>we design <span class="caption-element">things</span></h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
             <div class="buttons-block">
               <button type="button" class="button">hire us</button>
@@ -76,7 +76,7 @@
             </div>
           </div>
         </div>
-        <a href="#company-specs" class="icon-arrow-down header-anchor"></a>
+        <i href="#company-specs" class="icon-arrow-down scroll-btn-section"></i>
       </section>
       <section class="company-specs" id="company-specs">
         <div class="container">
@@ -127,19 +127,19 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="sub-section" style="background-image: url('img/sub-section-back.png');">
-        <div class="container sub-form-wrapper">
-          <form class="sub-form">
-            <input type="email" class="def-input" placeholder="Enter Your email adress for newsletter">
-            <button type="submit" class="button button_2">subscribe</button>
-          </form>
-        </div>
+        <div class="form-section" style="background-image: url('img/sub-section-back.png');">
+          <div class="container newsletter-form-wrapper">
+            <form class="newsletter-form">
+              <input type="email" placeholder="Enter Your email adress for newsletter">
+              <button type="submit" class="button button_2">subscribe</button>
+            </form>
+          </div>
+        </div>  
       </section>
       <section class="company-products">
         <div class="container products-block-wrapper">
           <div class="content-head">
-            <h2 class="site-caption">OUR <span class="caption-element">WORKS</span></h2>
+            <h2>OUR <span class="caption-element">WORKS</span></h2>
             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
           </div>
           <ul class="content-items">
@@ -227,8 +227,10 @@
                 <img src="img/carousel-image_1.png" alt="Image Description" width="120" height="120">
               </div>
               <div class="items-description">
-                <blockquote>These guys are incredible! I get my project in 10 days and it was awesome! Very good service! Highly recommended!</blockquote>
-                <a href="#">John Snith</a>
+                <blockquote cite="#">
+                  <p>These guys are incredible! I get my project in 10 days and it was awesome! Very good service! Highly recommended!</p>
+                  <a href="#">John Snith</a>
+                </blockquote>  
               </div>
             </li>
           </ul>
@@ -239,7 +241,7 @@
       <section class="user-inf-section">
         <div class="container user-inf-wrapper">
           <div class="content-head">
-            <h2 class="site-caption">OUR <span class="caption-element">TEAM</span></h2>
+            <h2>OUR <span class="caption-element">TEAM</span></h2>
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem</p>
           </div>
           <ul class="user-inf-content">
@@ -332,7 +334,7 @@
               </div>
             </li>
           </ul>
-          <ul class="radio-buttons">
+          <ul class="carousel-pg">
             <li>
               <a href="#"></a>
             </li>
@@ -351,31 +353,35 @@
       <section class="send-section" style="background-image: url('img/send-section-back.png');">
         <div class="container send-block-wrapper">
           <div class="content-head">
-            <h2 class="site-caption">SAY <span class="caption-element">HELLO</span></h2>
+            <h2>SAY <span class="caption-element">HELLO</span></h2>
             <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
           </div>
-          <form class="send-form">
-            <div class="row">
-              <div class="col">
-                <input type="email" class="def-input" placeholder="Your Email">
+          <form action="#" class="send-form">
+            <div class="form-row">
+              <div class="form-col">
+                <input type="email" placeholder="Your Email">
               </div>
-              <div class="col">
-                <input type="text" class="def-input" placeholder="Subject">
+              <div class="form-col">
+                <input type="text"  placeholder="Subject">
               </div>
             </div>
-            <div class="col-lg">
-              <textarea class="def-input" placeholder="Your Message"></textarea>
+            <div class="form-row">
+              <div class="form-col-lg">
+                <textarea placeholder="Your Message"></textarea>
+              </div>
             </div>
-            <div class="send-form-footer">
-              <button type="submit" class="button button_2">hire us</button>
-              <ul class="social-ico">
-                <li>
-                  <a href="#" class="icon-dribble dribble"></a>
-                </li>
-                <li>
-                  <a href="#" class="icon-behance behance"></a>
-                </li>
-              </ul>
+            <div class="form-row">
+              <div class="form-row">
+                <button type="submit" class="button button_2">hire us</button>
+                <ul class="social-ico">
+                  <li>
+                    <a href="#" class="icon-dribble dribble"></a>
+                  </li>
+                  <li>
+                    <a href="#" class="icon-behance behance"></a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </form>
         </div>

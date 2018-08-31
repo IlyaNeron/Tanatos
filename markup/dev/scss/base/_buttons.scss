@@ -11,7 +11,7 @@
   max-width: 100%;
   width: 100%;
   padding: 15px 0;
-  transition: background-color 0.3s linear, border-color 0.3s linear, color 0.3s linear;
+  transition: $base-bg-clr-animate, $base-brd-clr-animate, $base-clr-animate;
   background: none;
   cursor: pointer;
   outline: none;
@@ -36,4 +36,24 @@
 
 }
 
+.scroll-btn-section {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  text-decoration: none;
+  color: $white;
+  border: 2px solid $white;
+  border-radius: 50%;
+  padding: 6px;
+  font-size: 14px;
+  transition: $base-clr-animate, $base-brd-clr-animate;
+  cursor: pointer;
 
+  &:hover {
+    color: $orange;
+    border-color: $orange;
+  }
+
+}

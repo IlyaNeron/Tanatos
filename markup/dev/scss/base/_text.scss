@@ -1,6 +1,16 @@
 p {
-  font-size: $base-text-font-size;
-  line-height: $base-text-line-height;
-  color: $base-text-color;
-  margin: $base-text-margin;
+  margin-bottom: $base-text-margin;
+}
+
+
+p, .p {
+
+  @include media("<tablet") {
+    font-size: 16px;
+  }
+
+  @include media("<phone") {
+    font-size: 14px;
+  }
+  
 }

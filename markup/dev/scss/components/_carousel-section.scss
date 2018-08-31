@@ -37,17 +37,21 @@
       .items-description {
 
         blockquote {
-          font-style: italic;
-          color: $white;
-          font-size: 25px;
-          margin-bottom: 50px;
-          line-height: 1.8;
+          
+          p {
+            font-style: italic;
+            color: $white;
+            font-size: 25px;
+            margin-bottom: 50px;
+            line-height: 1.8;
+          }
+
         }
 
         a {
-          color: $white;
-          text-decoration: none;
           font-size: 18px;
+          display: block;
+          @include animate;
         }
 
       }
@@ -59,7 +63,7 @@
   .arrow-button {
     position: absolute;
     top: 55%;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
     text-decoration: none;
     color: #767676;
     font-size: 48px;
@@ -73,11 +77,11 @@
   }
 
   .right-arrow-button {
-    right: 0;
+    right: 15%;
   }
 
   .left-arrow-button {
-    left: 0;
+    left: 15%;
   }
 
 }

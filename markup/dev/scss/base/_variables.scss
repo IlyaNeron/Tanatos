@@ -21,28 +21,31 @@ $media-expressions: (
 // ligatured operators ≥ ≤
 
 // Colors
-$white: #fff;
-$black: #333;
-$orange: #f7600e;
+$white: #fff !default;
+$black: #333 !default;
+$orange: #f7600e !default;
 
 // Fonts
-$base-font-family: 'Open Sans';
+$base-font-family: 'Open Sans'!default;
 
 // Body
-$base-text-color: $black !default;
 $base-background-color: $white !default;
-$font-size-base: 14px !default;
-$font-weight-base: 400;
-$line-height-base: 1.5 !default;
-$base-min-width: 320px;
+$font-size-base: 16px !default;
+$font-weight-base: 400 !default;
+$base-line-height: 1.8 !default;
+$base-min-width: 320px !default;
+$base-color: #3b434c !default;
 
 // Container
-$base-max-width: 1075px;
-$base-padding: 0 15px;
-$sm-max-width: 860px;
-$sm-padding: 0 15px;
+$base-max-width: 1075px !default;
+$base-padding: 0 15px !default;
+$sm-max-width: 860px !default;
+$sm-padding: 0 15px !default;
 
 // Links
+$base-link-color: $white !default;
+$base-link-hover-color: $orange !default;
+$base-link-transition: color 0.3s linear !default;
 
 // Buttons
 $btn-color: $white !default;
@@ -57,33 +60,41 @@ $form-input-padding: 10px 10px 10px 20px !default;
 $form-input-font-size: 16px !default;
 $form-input-line-height: 1 !default;
 $form-input-font-weight: 300 !default;
-$form-input-border-radius: 10px;
-$form-input-width: 100%;
+$form-input-border-radius: 10px !default;
+$form-input-width: 100% !default;
 $placeholder-color: $black !default;
-$forms-base-transition: box-shadow 0.3s linear;
+$forms-base-transition: box-shadow 0.3s linear !default;
 
 // Headers
-$h1-font-size: 48px !default;
+$h1-font-size: 70px !default;
 $h2-font-size: 35px !default;
 $h3-font-size: 16px !default;
 $headings-font-family: $base-font-family !default;
 $headings-color: $black !default;
-$h-transform: uppercase;
-$h3-weight: 600;
-$h2-weight: 600;
-$h3-hover-color: $orange;
-$h-margin-def: 0 0 30px 0;
+$h-transform: uppercase !default;
+$h3-weight: 600 !default;
+$h2-weight: 600 !default;
+$h3-hover-color: $orange !default;
+$h-margin-def: 0 0 30px 0 !default;
 
 // span
-$base-span-color: $orange;
+$base-span-color: $orange !default;
 
 // p
-$base-text-color: $black;
-$base-text-line-height: 1.8;
-$base-text-font-size: 14px;
-$base-text-margin: 0 0 15px;
+$base-text-color: $black !default;
+$base-text-font-size: 16px !default;
+$base-text-margin: 15px !default;
 
 // ul
-$base-lists-padding: 0px;
-$base-lists-margin: 0;
-$base-lists-style: none;
+$base-lists-padding: 0px !default;
+$base-lists-margin: 0 !default;
+$base-lists-style: none !default;
+
+// animate
+$base-clr-animate: color 0.3s linear !default;
+$base-brd-clr-animate: border-color 0.3s linear !default;
+$base-opc-animate: opacity 0.3s linear !default;
+$base-tf-animate: transform 0.3s linear !default;
+$base-bg-clr-animate: background-color 0.3s linear !default;
+$base-flt-animate: filter 0.3s linear !default;
+$base-vs-animate: visibility 0.3s linear !default;

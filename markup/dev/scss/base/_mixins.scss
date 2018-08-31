@@ -3,3 +3,8 @@
   padding: $base-lists-padding;
   margin: $base-lists-margin;
 }
+
+@mixin animate {
+  transition: $base-link-transition;
+}
+

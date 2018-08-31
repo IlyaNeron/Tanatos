@@ -1,4 +1,4 @@
-.sub-section {
+.form-section {
   position: relative;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -18,11 +18,11 @@
 
 }
 
-  .sub-form-wrapper {
+  .newsletter-form-wrapper {
     justify-content: center;
   }
 
-  .sub-form {
+  .newsletter-form {
     z-index: 1;
     position: relative;
     display: flex;
@@ -40,16 +40,20 @@
 
 @include media("<phone") {
 
-  .sub-section .sub-form {
+  .form-section .sub-form {
     flex-direction: column;
 
   }
 
-  .sub-form {
+  .newsletter-form {
+    flex-wrap: wrap;
 
     input {
       margin-bottom: 15px;
       font-size: 14px;
+      width: 100%;
+      padding: 15px 20px;
+
     }
 
     button {

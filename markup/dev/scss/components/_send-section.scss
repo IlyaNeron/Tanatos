@@ -26,15 +26,12 @@
     position: relative;
 
     .content-head {
-      text-align: center;
-      padding-bottom: 100px;
-      max-width: 470px;
 
       p {
         color: $white;
       }
 
-      .site-caption {
+      h2 {
         color: $white;
       }
 
@@ -45,26 +42,29 @@
       flex-wrap: wrap;
       justify-content: space-between;
 
-      .row {
+      .form-row {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        padding-bottom: 30px;
 
-        .col {
-          width: 100%;
-
-          &:not(:last-child) {
-            padding-right: 30px;
-          }
-
+        &:not(:last-child) {
+          padding-bottom: 30px;
         }
+
+          .form-col {
+            width: 100%;
+
+            &:not(:last-child) {
+              padding-right: 30px;
+            }
+
+          }
 
       }
 
-      .col-lg {
+      .form-col-lg {
         width: 100%;
-        padding: 0 0 30px 0;
+        padding: 0 0 0 0;
 
 
         textarea {
@@ -141,6 +141,26 @@
 @include media("<phone") {
   .send-section .send-block-wrapper .send-form button {
     width: 100%;
-    margin-right: 30px;
+    margin-bottom: 30px;
   }
+
+  .form-row {
+    flex-wrap: wrap;
+
+    .form-col {
+      width: 100%;
+      padding-right: 0;
+
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+
+    }
+
+  }
+
+  .send-section .send-block-wrapper .send-form .form-row .form-col:not(:last-child) {
+    padding-right: 0;
+  }
+
 }

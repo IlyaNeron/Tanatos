@@ -7,7 +7,7 @@
   padding-bottom: 100px;
   max-width: 470px;
 
-  .site-caption {
+  h2 {
     color: $black;
   }
 
@@ -18,7 +18,7 @@
   flex-direction: column;
   align-items: center;
 
-  .radio-buttons {
+  .carousel-pg {
     display: flex;
     @include lists-reset;
 
@@ -34,7 +34,7 @@
         height: 10px;
         background-color: #c4c6c9;
         border-radius: 50%;
-        transition: background-color 0.3s linear, transform 0.3s linear;
+        transition: $base-bg-clr-animate, $base-tf-animate;;
 
         &:hover {
           background-color: $orange;
@@ -59,8 +59,7 @@
   .user-info-item {
     width: 25%;
     padding: 0 15px 15px 15px;
-    transition: filter 0.3s linear;
-    filter: grayscale(100%);
+    transition: $base-flt-animate;
 
     a {
       text-decoration: none;
@@ -68,34 +67,37 @@
     }
 
     &:hover {
-      filter: none;
 
       & .item-image {
-        transition: transform 0.3s linear;
-        transform: scale(1.1, 1.1);
-        transform-origin: 50% 100%;
+        transform: scale(1.1);
+        transform-origin: bottom;
+        filter: initial;
 
         &:after {
-          
-          // content: '';
-          height: 5px;
+          content: '';
           width: 100%;
+          border-bottom: 5px solid $orange;
           position: absolute;
-          background-color: $orange;
           bottom: 15px;
           border-radius: 10px;
         }
 
       }
 
-      & .item-description p {
-        color: $black;
-        transition: color 0.3s linear;
+      & .soc-icons {
+        filter: initial;
       }
 
-      & .item-description h3 {
-        color: $black;
-        transition: color 0.3s linear;
+      & .item-description {
+
+        h3 {
+          color: $black;
+        }
+
+        p {
+          color: $black;
+        }
+
       }
 
     }
@@ -103,7 +105,9 @@
     .item-image {
       width: 100%;
       padding-bottom: 15px;
-      transition: transform 0.3s linear;
+      transition: $base-tf-animate, $base-bg-clr-animate, $base-flt-animate;
+      position: relative;
+      filter: grayscale(100%);
 
       img {
         width: 100%;
@@ -120,15 +124,21 @@
         font-weight: $h3-weight;
         text-align: center;
         color: #c4c6c9;
-        transition: color 0.3s linear;
+        transition: $base-clr-animate;
       }
 
       p {
         text-align: center;
         color: #c4c6c9;
-        transition: color 0.3s linear;
+        transition: $base-clr-animate;
+        font-size: 14px;
       }
 
+    }
+
+    .soc-icons {
+      filter: grayscale(100%);
+      transition: $base-flt-animate;
     }
 
   }

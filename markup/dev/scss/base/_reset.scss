@@ -16,23 +16,8 @@ body {
   background: $base-background-color;
   font-size: $font-size-base;
   min-width: $base-min-width;
-
-
-  @include media("<desktop") {
-      p {
-      font-size: 14px;
-    }
-
-    h2 {
-      font-size: 24px;
-    }
-
-  }
-
-  @include media("<phone") {
-    font-size: 16px;
-  }
-
+  line-height: $base-line-height;
+  color: $base-color;
 }
 
 img {

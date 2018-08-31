@@ -1,22 +1,80 @@
-.site-caption {
-  color: $white;
-  font-weight: $h2-weight;
-  font-size: 35px;
-  text-transform: uppercase;
-
-}
-
 .caption-element {
   color: $orange;
-}
-
-.lists-caption {
-  font-size: $h3-font-size;
-  text-transform: $h-transform;
-  font-weight: $h3-weight;
 }
 
 h1, h2, h3 {
   margin: $h-margin-def;
 }
 
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6,
+.h {
+  font-family: $headings-font-family;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0 0 30px;
+  color: $white;
+  text-transform: $h-transform;
+
+  @include media("<phone") {
+    font-weight: 600;
+  }
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+h1, .h1 {
+  font-size: $h1-font-size;
+  font-weight: 900;
+
+  @include media("<tablet") {
+    font-size: 40px;
+  }
+
+  @include media("<phone") {
+    font-size: 30px;
+  }
+}
+
+h2, .h2 {
+  font-size: $h2-font-size;
+  color: $white;
+
+  @include media("<tablet") {
+    font-size: 30px;
+  }
+
+  @include media("<phone") {
+    font-size: 25px;
+  }
+}
+
+h3, .h3 {
+  font-size: $h3-font-size;
+
+  @include media("<tablet") {
+    font-size: 14px;
+  }
+
+  @include media("<phone") {
+    font-size: 14px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $base-link-color;
+  outline: none;
+  @include animate;
+
+  &:hover,
+  &:focus {
+    color: $base-link-hover-color;
+  }
+}
