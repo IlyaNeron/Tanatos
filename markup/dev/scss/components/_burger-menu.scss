@@ -1,21 +1,21 @@
-.burger-menu {
+.navigation {
   display: flex;
   align-items: center;
   cursor: pointer;
 
-  &-name {
-    color: $white;
-    padding-right: 10px;
-  }
-
-  &-button {
+  &-opener {
     display: flex;
     align-items: center;
     width: 30px;
     height: 30px;
     position: relative;
     justify-content: center;
-    transition: $base-tf-animate, $base-opc-animate;
+
+    &-text {
+      display: block;
+      padding-right: 90px;
+
+    }
 
     &:before {
         content: '';
@@ -25,7 +25,7 @@
         height: 1px;
         background: $white;
         display: block;
-        transition: $base-tf-animate;
+        @include animate(transform);
       }
 
       &:after {
@@ -36,42 +36,43 @@
         background: $white;
         display: block;
         bottom: 7px;
-        transition: $base-tf-animate;
+        @include animate(transform);
       }
 
-    & span {
-      display: block;
-      width: 20px;
-      height: 1px;
-      position: absolute;
-      background: $white;
-      transition: $base-opc-animate, $base-vs-animate;
-    }
+      &-line {
+        display: block;
+        @include animate(transform);
+        position: absolute;
+        width: 20px;
+        height: 1px;
+        background: $white;
+      }
 
   }
 
-  &:hover &-button {
-
-    & .button-icon {
-      opacity: 0;
-      visibility: hidden;
-    }
+  &:hover &-opener {
 
     &:after {
       transform: rotate(-45deg);
       top: 50%;
-
+      @include animate(transform);
     }
 
     &:before {
       transform: rotate(45deg);
       top: 50%;
+      @include animate(transform);
+    }
 
+    &-line {
+      opacity: 0;
+      visibility: hidden;
+      @include animate(opacity visibility);
     }
     
   }
 
-  .burger-menu-drop {
+  .navigation-drop {
     position: fixed;
     left: 0;
     top: 0;
@@ -85,7 +86,6 @@
     z-index: 4;
     transform: translateX(100%);
     visibility: hidden;
-    transition: $base-tf-animate;
     cursor: default;
 
     &:after {
@@ -96,7 +96,7 @@
       top: 0;
       bottom: 0;
       background-color: #3b434c;
-    }
+    } 
 
     .drop-content {
       display: flex;
@@ -106,11 +106,11 @@
       z-index: 4;
 
       .nav-menu {
-        @include lists-reset;
         display: flex;
         flex-direction: column;
         text-align: center;
         padding-bottom: 115px;
+        @extend %listreset;
 
         &:after {
           content: '';

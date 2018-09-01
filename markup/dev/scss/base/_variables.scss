@@ -56,7 +56,7 @@ $btn-font-weight: 400 !default;
 $btn-line-height: 1 !default;
 
 // Forms
-$form-input-padding: 10px 10px 10px 20px !default;
+$form-input-padding: 10px 20px 10px 20px !default;
 $form-input-font-size: 16px !default;
 $form-input-line-height: 1 !default;
 $form-input-font-weight: 300 !default;
@@ -89,12 +89,3 @@ $base-text-margin: 15px !default;
 $base-lists-padding: 0px !default;
 $base-lists-margin: 0 !default;
 $base-lists-style: none !default;
-
-// animate
-$base-clr-animate: color 0.3s linear !default;
-$base-brd-clr-animate: border-color 0.3s linear !default;
-$base-opc-animate: opacity 0.3s linear !default;
-$base-tf-animate: transform 0.3s linear !default;
-$base-bg-clr-animate: background-color 0.3s linear !default;
-$base-flt-animate: filter 0.3s linear !default;
-$base-vs-animate: visibility 0.3s linear !default;

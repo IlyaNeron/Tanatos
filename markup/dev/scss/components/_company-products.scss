@@ -16,15 +16,15 @@
   }
 
   .content-items {
-    @include lists-reset;
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 100px;
+    @extend %listreset;
 
 
     & li {
       width: 33.3333%;
-      padding: 0 15px 15px 15px;
+      padding: 15px 15px;
       display: flex;
       justify-content: center;
 
@@ -65,8 +65,8 @@
         text-align: center;
         opacity: 0;
         visibility: hidden;
-        transition: $base-opc-animate, $base-vs-animate;
         border-radius: 10px;
+        @include animate(opacity background-color color);
         z-index: 2;
         cursor: pointer;
 

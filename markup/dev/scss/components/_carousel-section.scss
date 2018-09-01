@@ -22,7 +22,7 @@
     display: flex;
     z-index: 1;
     position: relative;
-    @include lists-reset;
+    @extend %listreset;
 
     & li {
       display: flex;
@@ -38,7 +38,7 @@
 
         blockquote {
           
-          p {
+          q {
             font-style: italic;
             color: $white;
             font-size: 25px;
@@ -48,10 +48,11 @@
 
         }
 
-        a {
+        cite {
           font-size: 18px;
           display: block;
-          @include animate;
+          color: $white;
+          padding-top: 50px;
         }
 
       }
@@ -68,7 +69,6 @@
     color: #767676;
     font-size: 48px;
     z-index: 2;
-    transition: color 0.3s linear;
 
     &:hover {
       color: $orange;

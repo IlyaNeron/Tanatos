@@ -5,10 +5,10 @@
 
 // base
 @import 'base/variables';
-@import 'base/reset';
-@import 'base/buttons';
 @import 'base/mixins';
 @import 'base/helpers';
+@import 'base/reset';
+@import 'base/buttons';
 @import 'base/forms';
 @import 'base/typography';
 @import 'base/text';
@@ -17,7 +17,6 @@
 // components 
 @import 'components/burger-menu';
 @import 'components/logo';
-@import 'components/info-section';
 @import 'components/info-section-content';
 @import 'components/company-specs';
 @import 'components/form-section';

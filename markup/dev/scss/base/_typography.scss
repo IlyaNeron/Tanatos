@@ -60,7 +60,7 @@ h3, .h3 {
 
   @include media("<tablet") {
     font-size: 14px;
-  }
+  } 
 
   @include media("<phone") {
     font-size: 14px;
@@ -71,7 +71,7 @@ a {
   text-decoration: none;
   color: $base-link-color;
   outline: none;
-  @include animate;
+  @include animate(color, .3s, ease-in-out);
 
   &:hover,
   &:focus {

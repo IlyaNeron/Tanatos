@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
@@ -7,23 +8,24 @@
   <title>Tanatos</title>
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="stylesheet" href="css/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7cOpen+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7cOpen+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+    rel="stylesheet">
 </head>
 <body>
   <div class="wrapper">
-    <header class="header">
+    <header class="header add">
       <div class="container header-wrapper">
         <div class="logo">
           <a href="#">
             <img src="img/logo.png" alt="Tanatos Studio" width="158" height="18">
           </a>
         </div>
-        <div class="burger-menu">
-          <span class="burger-menu-name">Menu</span>
-          <div class="burger-menu-button">
-            <span class="button-icon"></span>
-          </div>
-          <div class="burger-menu-drop">
+        <nav class="navigation">
+          <a href="#" class="navigation-opener">
+            <span class="navigation-opener-text">Menu</span>
+            <span class="navigation-opener-line"></span>
+          </a>
+          <div class="navigation-drop">
             <div class="drop-content">
               <ul class="nav-menu">
                 <li>
@@ -33,7 +35,7 @@
                   <a href="#">about us</a>
                 </li>
                 <li>
-                    <a href="#">services</a>
+                  <a href="#">services</a>
                 </li>
                 <li>
                   <a href="#">our works</a>
@@ -61,7 +63,7 @@
               </ul>
             </div>
           </div>
-        </div>
+        </nav>
       </div>
     </header>
     <main>
@@ -69,57 +71,50 @@
         <div class="container">
           <div class="info-section-content">
             <h1>we design <span class="caption-element">things</span></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua</p>
             <div class="buttons-block">
               <button type="button" class="button">hire us</button>
               <button type="button" class="button">our works</button>
             </div>
           </div>
         </div>
-        <i href="#company-specs" class="icon-arrow-down scroll-btn-section"></i>
+        <a href="#" class="scroll-btn-section"><i class="icon-arrow-down"></i></a>
       </section>
       <section class="company-specs" id="company-specs">
         <div class="container">
           <ul class="list-items">
             <li>
-              <div class="image-wrapper">
-                <a href="#">
-                  <img src="img/list-items-img_1.png" alt="Image Description" width="55" height="58">
-                </a>
-              </div>
+              <a href="#" class="image-wrapper">
+                <img src="img/list-items-img_1.png" alt="Image Description" width="55" height="58">
+              </a>
               <div class="list-items-description">
                 <h3 class="lists-caption">print design</h3>
                 <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
               </div>
             </li>
             <li>
-              <div class="image-wrapper">
-                <a href="#">
-                  <img src="img/list-items-img_2.png" alt="Image Description" width="57" height="47">
-                </a>
-              </div>
+              <a href="#" class="image-wrapper">
+                <img src="img/list-items-img_2.png" alt="Image Description" width="57" height="47">
+              </a>
               <div class="list-items-description">
                 <h3 class="lists-caption">web design</h3>
                 <p>Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
               </div>
             </li>
             <li>
-              <div class="image-wrapper">
-                <a href="#">
-                  <img src="img/list-items-img_3.png" alt="Image Description" width="35" height="59">
-                </a>
-              </div>
+              <a href="#" class="image-wrapper">
+                <img src="img/list-items-img_3.png" alt="Image Description" width="35" height="59">
+              </a>
               <div class="list-items-description">
                 <h3 class="lists-caption">app design</h3>
                 <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
               </div>
             </li>
             <li>
-              <div class="image-wrapper">
-                <a href="#">
-                  <img src="img/list-items-img_4.png" alt="Image Description" width="36" height="58">
-                </a>
-              </div>
+              <a href="#" class="image-wrapper">
+                <img src="img/list-items-img_4.png" alt="Image Description" width="36" height="58">
+              </a>
               <div class="list-items-description">
                 <h3 class="lists-caption">logo design</h3>
                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
@@ -134,13 +129,14 @@
               <button type="submit" class="button button_2">subscribe</button>
             </form>
           </div>
-        </div>  
+        </div>
       </section>
       <section class="company-products">
         <div class="container products-block-wrapper">
           <div class="content-head">
             <h2>OUR <span class="caption-element">WORKS</span></h2>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat</p>
           </div>
           <ul class="content-items">
             <li>
@@ -228,9 +224,10 @@
               </div>
               <div class="items-description">
                 <blockquote cite="#">
-                  <p>These guys are incredible! I get my project in 10 days and it was awesome! Very good service! Highly recommended!</p>
-                  <a href="#">John Snith</a>
-                </blockquote>  
+                  <q>These guys are incredible! I get my project in 10 days and it was awesome! Very good service!
+                    Highly recommended!</q>
+                  <cite href="#">John Sm</cite>
+                </blockquote>
               </div>
             </li>
           </ul>
@@ -242,7 +239,8 @@
         <div class="container user-inf-wrapper">
           <div class="content-head">
             <h2>OUR <span class="caption-element">TEAM</span></h2>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam
+              rem</p>
           </div>
           <ul class="user-inf-content">
             <li class="user-info-item">
@@ -354,7 +352,8 @@
         <div class="container send-block-wrapper">
           <div class="content-head">
             <h2>SAY <span class="caption-element">HELLO</span></h2>
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+              laborum</p>
           </div>
           <form action="#" class="send-form">
             <div class="form-row">
@@ -362,7 +361,7 @@
                 <input type="email" placeholder="Your Email">
               </div>
               <div class="form-col">
-                <input type="text"  placeholder="Subject">
+                <input type="text" placeholder="Subject">
               </div>
             </div>
             <div class="form-row">
@@ -373,7 +372,16 @@
             <div class="form-row">
               <div class="form-row">
                 <button type="submit" class="button button_2">hire us</button>
-                <ul class="social-ico">
+                <ul class="soc-icons">
+                  <li>
+                    <a href="#" class="icon-facebook facebook"></a>
+                  </li>
+                  <li>
+                    <a href="#" class="icon-twitter twitter"></a>
+                  </li>
+                  <li>
+                    <a href="#" class="icon-google google"></a>
+                  </li>
                   <li>
                     <a href="#" class="icon-dribble dribble"></a>
                   </li>
