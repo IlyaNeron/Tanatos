@@ -7,6 +7,7 @@
   justify-content: center;
   align-items: center;
   padding: 100px 0;
+  z-index: 0;
 
   &:after {
     content: '';
@@ -41,6 +42,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      max-width: 860px;
 
       .form-row {
         display: flex;
@@ -65,20 +67,7 @@
 
       .form-col-lg {
         width: 100%;
-        padding: 0 0 0 0;
-
-
-        textarea {
-          min-height: 200px;
-          font-family: 'Lato';
-          font-size: 16px;
-          max-width: 1045px;
-          min-width: 100%;
-          max-height: 500px;
-          min-height: 200px;
-          overflow-x: hidden;
-        }
-
+        display: flex;
       }
 
       button {

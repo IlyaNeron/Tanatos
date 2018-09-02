@@ -1,0 +1,60 @@
+.dropdown-block {
+    max-width: 765px;
+    width: 100%;
+    background-color: $white;
+    padding: 60px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include vertical-align-el;
+    position: fixed;
+    @include animate(transform visibility);
+    display: none;
+
+    .content-head {
+        padding-bottom: 45px;
+
+        p {
+            color: $black;
+            font-size: 16px;
+            margin-bottom: 0;
+        }
+
+    }
+
+    form {
+        width: 100%;
+
+        .form-row {
+
+            .form-col {
+              margin-bottom: 30px;
+
+              input {
+                  border: 1px solid #c4c6c9;
+
+                  &:focus {
+                      border-color: $orange;
+                  }
+              }
+
+            }
+
+            .form-col-lg {
+                display: flex;
+                margin-bottom: 30px;
+
+                textarea {
+                    border: 1px solid #c4c6c9;
+
+                    &:focus {
+                        border-color: $orange;
+                    }
+                }
+
+            }
+        }
+
+    }
+
+}
