@@ -12,11 +12,12 @@ html {
 }
 
 body {
-  font-family: $base-font-family;
+  font: #{$font-size-base}/#{$base-line-height} $base-font-sans-serif;
+  // font-family: $base-font-family;
   background: $base-background-color;
-  font-size: $font-size-base;
+  // font-size: $font-size-base;
   min-width: $base-min-width;
-  line-height: $base-line-height;
+  // line-height: $base-line-height;
   color: $base-color;
 }
 

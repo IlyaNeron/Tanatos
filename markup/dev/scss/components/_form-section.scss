@@ -3,8 +3,9 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 100% 100%;
-  padding: 100px 0;
+  padding: 100px 0 100px;
   z-index: 0;
+  margin-bottom: 100px;
 
   &:after {
     content: '';

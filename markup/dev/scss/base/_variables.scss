@@ -26,7 +26,7 @@ $black: #333 !default;
 $orange: #f7600e !default;
 
 // Fonts
-$base-font-family: 'Open Sans'!default;
+$base-font-sans-serif: "Open Sans", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
 
 // Body
 $base-background-color: $white !default;
@@ -69,7 +69,7 @@ $forms-base-transition: box-shadow 0.3s linear !default;
 $h1-font-size: 70px !default;
 $h2-font-size: 35px !default;
 $h3-font-size: 16px !default;
-$headings-font-family: $base-font-family !default;
+$headings-font-family: $base-font-sans-serif !default;
 $headings-color: $black !default;
 $h-transform: uppercase !default;
 $h3-weight: 600 !default;

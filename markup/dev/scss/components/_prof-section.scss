@@ -56,7 +56,7 @@
 
     &:hover {
 
-      & .item-image {
+      .item-image {
         transform: scale(1.1);
         transform-origin: bottom;
         filter: initial;
@@ -74,11 +74,11 @@
 
       }
 
-      & .soc-icons {
+      .soc-icons {
         filter: initial;
       }
 
-      & .item-description {
+      .item-description {
 
         h3 {
           color: $black;

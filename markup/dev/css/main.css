@@ -368,11 +368,9 @@ html {
   max-height: 1000000px; }
 
 body {
-  font-family: "Open Sans";
+  font: 16px/1.8 "Open Sans", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
   background: #fff;
-  font-size: 16px;
   min-width: 320px;
-  line-height: 1.8;
   color: #3b434c; }
 
 img {
@@ -508,7 +506,7 @@ h4, .h4,
 h5, .h5,
 h6, .h6,
 .h {
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
   font-weight: 600;
   line-height: 1.5;
   margin: 0 0 30px;
@@ -583,7 +581,10 @@ p {
     font-size: 14px; } }
 
 blockquote {
-  margin: 0 30px; }
+  margin: 0 30px;
+  color: #fff;
+  font-size: 25px;
+  font-style: italic; }
 
 .navigation {
   display: -webkit-box;
@@ -803,10 +804,10 @@ blockquote {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  color: #fff;
+  font-size: 25px; }
   .info-section-content p {
-    color: #fff;
-    font-size: 25px;
     margin-bottom: 70px; }
   .info-section-content .buttons-block button {
     width: 28%; }
@@ -850,8 +851,7 @@ blockquote {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  margin: 0 -30px;
-  padding: 0 0 100px; }
+  margin: 0 -30px; }
   .list-items li {
     display: -webkit-box;
     display: -webkit-flex;
@@ -910,8 +910,9 @@ blockquote {
   background-position: 50% 50%;
   -webkit-background-size: 100% 100%;
           background-size: 100% 100%;
-  padding: 100px 0;
-  z-index: 0; }
+  padding: 100px 0 100px;
+  z-index: 0;
+  margin-bottom: 100px; }
   .form-section:after {
     content: '';
     position: absolute;
@@ -990,8 +991,8 @@ blockquote {
             flex-wrap: wrap;
     padding-bottom: 100px; }
     .products-block-wrapper .content-items li {
-      width: 33.3333%;
-      padding: 15px 15px;
+      width: 33.33333%;
+      padding: 0 15px 30px;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -1049,8 +1050,8 @@ blockquote {
         visibility: hidden;
         -webkit-border-radius: 10px;
                 border-radius: 10px;
-        cursor: pointer;
         z-index: 2;
+        color: #fff;
         -webkit-transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out, color 0.3s ease-in-out, visibility 0.3s ease-in-out;
         -o-transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out, color 0.3s ease-in-out, visibility 0.3s ease-in-out;
         transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out, color 0.3s ease-in-out, visibility 0.3s ease-in-out; }
@@ -1067,18 +1068,17 @@ blockquote {
                   border-radius: 10px;
           z-index: -1;
           visibility: visible; }
-        .products-block-wrapper .content-items li .item-description button {
+        .products-block-wrapper .content-items li .item-description span {
           color: #333;
           width: 100%;
-          background-color: #fff; }
-          .products-block-wrapper .content-items li .item-description button:hover {
+          background-color: #fff;
+          border: 1px solid transparent; }
+          .products-block-wrapper .content-items li .item-description span:hover {
             color: #f7600e; }
         .products-block-wrapper .content-items li .item-description h3 {
-          margin: 0 0 15px;
-          color: #fff; }
+          margin: 0 0 15px; }
         .products-block-wrapper .content-items li .item-description p {
-          margin: 0 0 50px;
-          color: #fff; }
+          margin: 0 0 50px; }
   .products-block-wrapper button {
     color: #3b434c;
     width: 20%; }
@@ -1150,15 +1150,10 @@ blockquote {
       .carousel-section .carousel-items li .items-image {
         padding-bottom: 45px; }
       .carousel-section .carousel-items li .items-description blockquote q {
-        font-style: italic;
-        color: #fff;
-        font-size: 25px;
-        margin-bottom: 50px;
-        line-height: 1.8; }
+        margin-bottom: 50px; }
       .carousel-section .carousel-items li .items-description cite {
         font-size: 18px;
         display: block;
-        color: #fff;
         padding-top: 50px; }
   .carousel-section .arrow-button {
     position: absolute;
@@ -1490,7 +1485,8 @@ blockquote {
   -o-transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-  z-index: 3; }
+  z-index: 3;
+  display: none; }
   .popup .content-head {
     padding-bottom: 45px; }
     .popup .content-head p {
@@ -1513,19 +1509,6 @@ blockquote {
         border: 1px solid #c4c6c9; }
         .popup form .row .form-row-lg textarea:focus {
           border-color: #f7600e; }
-
-.overlay {
-  display: none; }
-  .overlay:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #444a52;
-    z-index: 2;
-    opacity: 0.9; }
 
 @media (max-width: 1023px) {
   .popup {

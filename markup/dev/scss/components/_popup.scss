@@ -10,6 +10,7 @@
     position: fixed;
     @include animate(transform visibility);
     z-index: 3;
+    display: none;
 
     .content-head {
         padding-bottom: 45px;
@@ -54,23 +55,6 @@
             
         }
 
-    }
-
-}
-
-.overlay {
-    display: none;
-
-    &:after {
-        content: '';
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: #444a52;
-        z-index: 2;
-        opacity: 0.9;
     }
 
 }
