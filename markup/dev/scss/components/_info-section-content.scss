@@ -16,11 +16,12 @@
     bottom: 0;
     background-color: #444a52;
     opacity: 0.9;
+    z-index: -1;
   }
+
 }
 
 .info-section-content {
-  z-index: 1;
   position: relative;
   text-align: center;
   max-width: 750px;

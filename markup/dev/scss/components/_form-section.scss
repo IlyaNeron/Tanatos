@@ -15,6 +15,7 @@
     bottom: 0;
     background-color: #444a52;
     opacity: 0.9;
+    z-index: -1;
   }
 
 }
@@ -24,7 +25,6 @@
   }
 
   .newsletter-form {
-    z-index: 1;
     position: relative;
     display: flex;
     justify-content: space-between;

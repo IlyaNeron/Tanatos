@@ -8,11 +8,6 @@
 
   .content-head {
     padding-bottom: 85px;
-
-    h2 {
-      color: $black;
-    }
-
   }
 
   .content-items {
@@ -20,7 +15,6 @@
     flex-wrap: wrap;
     padding-bottom: 100px;
     @extend %listreset;
-    z-index: 0;
 
 
     & li {
@@ -46,7 +40,6 @@
         &:hover .item-description {
           opacity: 1;
           visibility: visible;
-          z-index: 2;
           border-radius: 10px;
         }
 
@@ -67,9 +60,9 @@
         opacity: 0;
         visibility: hidden;
         border-radius: 10px;
-        @include animate(opacity background-color color);
-        z-index: 2;
         cursor: pointer;
+        z-index: 2;
+        @include animate(background-color opacity color visibility);
 
         &:after {
           content: '';
@@ -80,8 +73,9 @@
           bottom: 0;
           background-color: $orange;
           opacity: 0.9;
-          z-index: -1;
           border-radius: 10px;
+          z-index: -1;
+          visibility: visible;
         }
 
         button {

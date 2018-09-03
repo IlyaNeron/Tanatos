@@ -1,4 +1,4 @@
-.dropdown-block {
+.popup {
     max-width: 765px;
     width: 100%;
     background-color: $white;
@@ -9,14 +9,12 @@
     @include vertical-align-el;
     position: fixed;
     @include animate(transform visibility);
-    display: none;
+    z-index: 3;
 
     .content-head {
         padding-bottom: 45px;
 
         p {
-            color: $black;
-            font-size: 16px;
             margin-bottom: 0;
         }
 
@@ -25,9 +23,9 @@
     form {
         width: 100%;
 
-        .form-row {
+        .row {
 
-            .form-col {
+            .form-row {
               margin-bottom: 30px;
 
               input {
@@ -40,7 +38,7 @@
 
             }
 
-            .form-col-lg {
+            .form-row-lg {
                 display: flex;
                 margin-bottom: 30px;
 
@@ -58,4 +56,29 @@
 
     }
 
+}
+
+.overlay {
+    display: none;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #444a52;
+        z-index: 2;
+        opacity: 0.9;
+    }
+
+}
+
+@include media("<tablet") {
+
+    .popup {
+        padding: 30px 15px;
+    }
+    
 }

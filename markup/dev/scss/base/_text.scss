@@ -6,11 +6,15 @@ p {
 p, .p {
 
   @include media("<tablet") {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   @include media("<phone") {
     font-size: 14px;
   }
   
+}
+
+blockquote {
+  margin: 0 30px;
 }

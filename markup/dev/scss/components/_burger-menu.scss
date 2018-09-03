@@ -13,8 +13,9 @@
 
     &-text {
       display: block;
-      padding-right: 90px;
-
+      position: absolute;
+      left: -180%;
+      padding-right: 45px;
     }
 
     &:before {
@@ -41,11 +42,13 @@
 
       &-line {
         display: block;
-        @include animate(transform);
+        @include animate(transform opacity visibility);
         position: absolute;
         width: 20px;
         height: 1px;
         background: $white;
+        opacity: 1;
+        visibility: visible;
       }
 
   }
@@ -83,7 +86,6 @@
     flex-direction: column;
     justify-content: center;
     align-self: center;
-    z-index: 4;
     cursor: default;
     display: none;
 
@@ -102,7 +104,7 @@
       justify-content: center;
       align-self: center;
       flex-direction: column;
-      z-index: 4;
+      z-index: 2;
 
       .nav-menu {
         display: flex;

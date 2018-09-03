@@ -17,11 +17,11 @@
     bottom: 0;
     background-color: #444a52;
     opacity: 0.9;
+    z-index: -1;
   }
 
   .carousel-items {
     display: flex;
-    z-index: 1;
     position: relative;
     @extend %listreset;
 
@@ -89,8 +89,36 @@
 
 @include media("<phone") {
   
-  .carousel-section .carousel-items li .items-description blockquote {
-    font-size: 18px;
+  .carousel-section .carousel-items li .items-description blockquote q {
+    font-size: 16px;
+  }
+
+  .carousel-section .arrow-button {
+    display: none;
+  }
+
+}
+
+@media (max-width: 1600px) {
+
+  .carousel-section .right-arrow-button {
+    right: 10%;
+  }
+
+  .carousel-section .left-arrow-button {
+    left: 10%;
+  }
+
+}
+
+@media (max-width: 1330px) {
+  
+  .carousel-section .right-arrow-button {
+    right: 0;
+  }
+
+  .carousel-section .left-arrow-button {
+    left: 0;
   }
 
 }

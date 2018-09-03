@@ -2,17 +2,6 @@
   padding: 100px 0;
 }
 
-.content-head {
-  text-align: center;
-  padding-bottom: 100px;
-  max-width: 470px;
-
-  h2 {
-    color: $black;
-  }
-
-}
-
 .user-inf-wrapper {
   justify-content: center;
   flex-direction: column;
@@ -71,7 +60,7 @@
         transform: scale(1.1);
         transform-origin: bottom;
         filter: initial;
-        @include animate(filter transform);
+        @include animate(filter transform transform-origin);
 
         &:after {
           content: '';
@@ -80,7 +69,7 @@
           position: absolute;
           bottom: 15px;
           border-radius: 10px;
-          @include animate(border border-color);
+          @include animate(border);
         }
 
       }
@@ -110,6 +99,7 @@
       padding-bottom: 15px;
       position: relative;
       filter: grayscale(100%);
+      @include animate(transform transform-origin filter);
 
       img {
         width: 100%;
@@ -141,57 +131,6 @@
     .soc-icons {
       filter: grayscale(100%);
       @include animate(filter color background-color);
-    }
-
-  }
-
-}
-
-.soc-icons {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 30px;
-  @extend %listreset;
-
-  li {
-    width: inherit;
-
-    &:not(:last-child) {
-      padding:0 15px 0 0;
-    }
-
-    a {
-      text-decoration: none;
-      font-size: 30px;
-      display: block;
-      border-radius: 50%;
-      background-color: #fff;
-      @include animate(color);
-
-      &:hover {
-        color: $orange;
-      }
-
-    }
-
-    .icon-facebook {
-      color: #205b9f
-    }
-
-    .icon-twitter {
-      color: #00ace3;
-    }
-
-    .icon-google {
-      color: #ff3921;
-    }
-
-    .icon-dribble {
-      color: #ff72a5;
-    }
-
-    .icon-behance {
-      color: #009bd5;
     }
 
   }

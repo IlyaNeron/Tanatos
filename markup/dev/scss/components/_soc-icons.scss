@@ -1,0 +1,50 @@
+.soc-icons {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    @extend %listreset;
+  
+    li {
+      width: inherit;
+  
+      &:not(:last-child) {
+        padding:0 15px 0 0;
+      }
+  
+      a {
+        text-decoration: none;
+        font-size: 30px;
+        display: block;
+        border-radius: 50%;
+        background-color: #fff;
+        @include animate(color);
+  
+        &:hover {
+          color: $orange;
+        }
+  
+      }
+  
+      .icon-facebook {
+        color: #205b9f
+      }
+  
+      .icon-twitter {
+        color: #00ace3;
+      }
+  
+      .icon-google {
+        color: #ff3921;
+      }
+  
+      .icon-dribble {
+        color: #ff72a5;
+      }
+  
+      .icon-behance {
+        color: #009bd5;
+      }
+  
+    }
+  
+  }
