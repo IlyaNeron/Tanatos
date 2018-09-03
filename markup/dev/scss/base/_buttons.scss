@@ -51,11 +51,17 @@
 
   i {
     @include vertical-align-el;
+
   }
 
   &:hover {
     color: $orange;
     border-color: $orange;
+  }
+
+  &:focus {
+    color: $white;
+    border-color: $white;
   }
 
 }

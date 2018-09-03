@@ -1,0 +1,15 @@
+.slideshow {
+    position: relative;
+ }
+ 
+ .slideshow .slide {
+    display: flex;
+    width: 100%;
+ }
+ .slideshow .slide.active {
+    z-index: 2;
+ }
+ .slideshow.not-enough-slides .btn-prev,
+ .slideshow.not-enough-slides .btn-next {
+    visibility: hidden
+ }
