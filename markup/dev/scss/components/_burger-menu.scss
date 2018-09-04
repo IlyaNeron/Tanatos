@@ -1,81 +1,55 @@
 .navigation {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
 
   &-opener {
-    display: flex;
-    align-items: center;
-    width: 30px;
+    width: 20px;
     height: 30px;
     position: relative;
-    justify-content: center;
     z-index: 3;
+    display: block;
 
     &-text {
-      display: block;
       position: absolute;
-      left: -180%;
-      padding-right: 45px;
+      right: 100%;
+      padding-right: 15px;
       @include animate(opacity visibility);
     }
 
-    &:before {
+    &:before, &:after, &-line {
         content: '';
         position: absolute;
         top: 8px;
-        width: 20px;
+        left: 0;
+        right: 0;
         height: 1px;
         background: $white;
         display: block;
-        @include animate(transform);
+        @include animate(transform opacity visibility);
       }
 
       &:after {
-        content: '';
-        position: absolute;
-        width: 20px;
-        height: 1px;
-        background: $white;
-        display: block;
+        top: inherit;
         bottom: 7px;
-        @include animate(transform);
       }
 
       &-line {
-        display: block;
-        @include animate(transform opacity visibility);
-        position: absolute;
-        width: 20px;
-        height: 1px;
-        background: $white;
         opacity: 1;
         visibility: visible;
+        top: 50%;
       }
 
       .navigation-active  & {
 
-        &:after {
+        &:after, &:before {
           content: '';
           transform: rotate(-45deg);
           top: 50%;
-          @include animate(transform);
         }
     
         &:before {
-          content: '';
           transform: rotate(45deg);
-          top: 50%;
-          @include animate(transform);
         }
     
-        &-line {
-          opacity: 0;
-          visibility: hidden;
-          @include animate(opacity visibility);
-        }
-
-        &-text {
+        &-line, &-text {
           opacity: 0;
           visibility: hidden;
         }
@@ -91,63 +65,42 @@
     bottom: 0;
     right: 0;
     height: 100vh;
-    align-self: center;
     cursor: default;
     transform: translateX(100%);
     @include animate(transform);
+    text-align: center;
+    padding: 100px 15px;
+    overflow: auto; 
 
     .navigation-active & {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
       transform: translateX(0);
+      background: #444a52;
     }
 
-    &:after {
-      content: '';
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      background-color: #3b434c;
-    } 
-
-    .drop-content {
-      display: flex;
-      justify-content: center;
-      align-self: center;
-      flex-direction: column;
+    .nav-menu {
+      padding-bottom: 115px;
+      @extend %listreset;
       z-index: 2;
+      position: relative;
+      font-size: 35px;
+      font-weight: 600;
+      text-transform: uppercase;
 
-      .nav-menu {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-bottom: 115px;
-        @extend %listreset;
+      &:after {
+        content: '';
+        width: 170px;
+        height: 1px;
+        background-color: $orange;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 70px;
+      }
 
-        &:after {
-          content: '';
-          width: 170px;
-          height: 1px;
-          background-color: $orange;
-          margin: 55px auto 0 auto;
-        }
+      li {
 
-        li {
-
-          &:not(:last-child) {
-            padding-bottom: 40px;
-          }
-
-          a {
-            font-size: 35px;
-            font-weight: 600;
-            text-transform: uppercase;
-            text-decoration: none;
-          }
-
+        &:not(:last-child) {
+          padding-bottom: 40px;
         }
 
       }

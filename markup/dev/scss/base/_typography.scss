@@ -2,9 +2,6 @@
   color: $orange;
 }
 
-h1, h2, h3 {
-  margin: $h-margin-def;
-}
 
 h1, .h1,
 h2, .h2,
@@ -97,8 +94,29 @@ p, .p {
 }
 
 blockquote {
-  margin: 0 30px;
+  margin: 0 100px;
   color: $white;
   font-size: 25px;
   font-style: italic;
+
+  cite {
+    padding-top: 40px;
+  }
+
+}
+
+@include media("<phone") {
+
+  blockquote {
+
+    q {
+      font-size: 16px;
+    }
+
+    cite {
+      font-size: 18px;
+    }
+
+  }
+
 }

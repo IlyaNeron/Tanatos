@@ -47,7 +47,7 @@ function initSlideShow() {
     btnPrev: '.btn-prev',
     btnNext: '.btn-next',
     pauseOnHover: false,
-    autoRotation: true
+    autoRotation: false
   });
 }
   
