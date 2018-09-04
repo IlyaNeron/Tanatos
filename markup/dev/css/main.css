@@ -345,7 +345,7 @@ template {
 .icon-dribble:before {
   content: "\e904"; }
 
-.navigation .navigation-drop .nav-menu, .list-items, .products-block-wrapper .content-items, .user-inf-wrapper .carousel-pg, .user-inf-content, .soc-icons {
+.navigation .navigation-drop .nav-menu, .list-items, .products-block-wrapper .content-items, .soc-icons, .pagination .pg-items {
   margin: 0;
   padding: 0;
   list-style: none; }
@@ -1014,7 +1014,8 @@ blockquote {
           .products-block-wrapper .content-items li .item-description span:hover {
             color: #f7600e; }
         .products-block-wrapper .content-items li .item-description h3 {
-          margin: 0 0 15px; }
+          margin: 0 0 15px;
+          color: #fff; }
         .products-block-wrapper .content-items li .item-description p {
           margin: 0 0 50px; }
   .products-block-wrapper button {
@@ -1181,148 +1182,11 @@ blockquote {
 
 .user-inf-section {
   padding: 100px 0; }
-
-.user-inf-wrapper {
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .user-inf-wrapper .carousel-pg {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
-    .user-inf-wrapper .carousel-pg li:not(:last-child) {
-      padding-right: 10px; }
-    .user-inf-wrapper .carousel-pg li a {
-      display: block;
-      width: 10px;
-      height: 10px;
-      background-color: #c4c6c9;
-      -webkit-border-radius: 50%;
-              border-radius: 50%;
-      -webkit-transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-      transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-      -o-transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
-      transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
-      transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; }
-      .user-inf-wrapper .carousel-pg li a:hover {
-        background-color: #f7600e;
-        -webkit-transform: scale(1.2);
-            -ms-transform: scale(1.2);
-                transform: scale(1.2); }
-
-.user-inf-content {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  padding-bottom: 100px; }
-  .user-inf-content .user-info-item {
-    width: 25%;
-    padding: 0 20px 15px 20px; }
-    .user-inf-content .user-info-item a {
-      text-decoration: none;
-      display: block; }
-    .user-inf-content .user-info-item:hover .item-image {
-      -webkit-transform: scale(1.1);
-          -ms-transform: scale(1.1);
-              transform: scale(1.1);
-      -webkit-transform-origin: bottom;
-          -ms-transform-origin: bottom;
-              transform-origin: bottom;
-      -webkit-filter: initial;
-              filter: initial;
-      -webkit-transition: -webkit-filter 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -webkit-transform-origin 0.3s ease-in-out;
-      transition: -webkit-filter 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -webkit-transform-origin 0.3s ease-in-out;
-      -o-transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out, transform-origin 0.3s ease-in-out;
-      transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out, transform-origin 0.3s ease-in-out;
-      transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out, transform-origin 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -webkit-transform-origin 0.3s ease-in-out, -ms-transform-origin 0.3s ease-in-out; }
-      .user-inf-content .user-info-item:hover .item-image:after {
-        content: '';
-        width: 100%;
-        border-bottom: 5px solid #f7600e;
-        position: absolute;
-        bottom: 15px;
-        -webkit-border-radius: 10px;
-                border-radius: 10px;
-        -webkit-transition: border 0.3s ease-in-out;
-        -o-transition: border 0.3s ease-in-out;
-        transition: border 0.3s ease-in-out; }
-    .user-inf-content .user-info-item:hover .soc-icons {
-      -webkit-filter: initial;
-              filter: initial; }
-    .user-inf-content .user-info-item:hover .item-description h3 {
-      color: #333;
-      -webkit-transition: color 0.3s ease-in-out;
-      -o-transition: color 0.3s ease-in-out;
-      transition: color 0.3s ease-in-out; }
-    .user-inf-content .user-info-item:hover .item-description p {
-      color: #333;
-      -webkit-transition: color 0.3s ease-in-out;
-      -o-transition: color 0.3s ease-in-out;
-      transition: color 0.3s ease-in-out; }
-    .user-inf-content .user-info-item .item-image {
-      width: 100%;
-      padding-bottom: 15px;
-      position: relative;
-      -webkit-filter: grayscale(100%);
-              filter: grayscale(100%);
-      -webkit-transition: -webkit-transform 0.3s ease-in-out, -webkit-transform-origin 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
-      transition: -webkit-transform 0.3s ease-in-out, -webkit-transform-origin 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
-      -o-transition: transform 0.3s ease-in-out, transform-origin 0.3s ease-in-out, filter 0.3s ease-in-out;
-      transition: transform 0.3s ease-in-out, transform-origin 0.3s ease-in-out, filter 0.3s ease-in-out;
-      transition: transform 0.3s ease-in-out, transform-origin 0.3s ease-in-out, filter 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -webkit-transform-origin 0.3s ease-in-out, -ms-transform-origin 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out; }
-      .user-inf-content .user-info-item .item-image img {
-        width: 100%;
-        display: block; }
-    .user-inf-content .user-info-item .item-description h3 {
-      text-transform: uppercase;
-      font-size: 25px;
-      font-weight: 600;
-      text-align: center;
-      color: #c4c6c9;
-      -webkit-transition: color 0.3s ease-in-out;
-      -o-transition: color 0.3s ease-in-out;
-      transition: color 0.3s ease-in-out; }
-    .user-inf-content .user-info-item .item-description p {
-      text-align: center;
-      color: #c4c6c9;
-      font-size: 14px;
-      -webkit-transition: color 0.3s ease-in-out;
-      -o-transition: color 0.3s ease-in-out;
-      transition: color 0.3s ease-in-out; }
-    .user-inf-content .user-info-item .soc-icons {
-      -webkit-filter: grayscale(100%);
-              filter: grayscale(100%);
-      -webkit-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
-      transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
-      -o-transition: filter 0.3s ease-in-out, color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-      transition: filter 0.3s ease-in-out, color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-      transition: filter 0.3s ease-in-out, color 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out; }
-
-@media (max-width: 1023px) {
-  .user-inf-content .user-info-item {
-    width: 50%;
-    padding: 0 15px 15px 15px; } }
-
-@media (max-width: 767px) {
-  .user-inf-content .user-info-item {
-    width: 100%;
-    padding: 0 0 15px 0; } }
+  .user-inf-section .container {
+    display: block; }
+    .user-inf-section .container .content-head {
+      margin: 0 auto;
+      padding: 0; }
 
 .popup {
   max-width: 765px;
@@ -1491,6 +1355,146 @@ blockquote {
     font-size: 16px; }
   .carousel-section .arrow-button {
     display: none; } }
+
+.carousel {
+  position: relative; }
+  .carousel .mask {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding: 100px 30px; }
+    .carousel .mask .slideset {
+      width: 100% !important;
+      display: inline-block;
+      white-space: nowrap;
+      line-height: 0; }
+  .carousel .slide {
+    width: 25%;
+    padding: 0 15px 0 15px;
+    display: inline-block;
+    line-height: 1.5;
+    white-space: normal; }
+    .carousel .slide .item-description h3 {
+      text-transform: uppercase;
+      font-size: 25px;
+      font-weight: 600;
+      text-align: center;
+      color: #c4c6c9;
+      -webkit-transition: color 0.3s ease-in-out;
+      -o-transition: color 0.3s ease-in-out;
+      transition: color 0.3s ease-in-out; }
+    .carousel .slide .item-description p {
+      text-align: center;
+      color: #c4c6c9;
+      font-size: 14px;
+      -webkit-transition: color 0.3s ease-in-out;
+      -o-transition: color 0.3s ease-in-out;
+      transition: color 0.3s ease-in-out;
+      margin: 0; }
+    .carousel .slide .item-image {
+      width: 100%;
+      padding-bottom: 15px;
+      position: relative;
+      -webkit-filter: grayscale(100%);
+              filter: grayscale(100%);
+      -webkit-transition: -webkit-transform 0.3s ease-in-out, -webkit-transform-origin 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
+      transition: -webkit-transform 0.3s ease-in-out, -webkit-transform-origin 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
+      -o-transition: transform 0.3s ease-in-out, transform-origin 0.3s ease-in-out, filter 0.3s ease-in-out;
+      transition: transform 0.3s ease-in-out, transform-origin 0.3s ease-in-out, filter 0.3s ease-in-out;
+      transition: transform 0.3s ease-in-out, transform-origin 0.3s ease-in-out, filter 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -webkit-transform-origin 0.3s ease-in-out, -ms-transform-origin 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out; }
+      .carousel .slide .item-image img {
+        width: 100%;
+        display: block; }
+    .carousel .slide .soc-icons {
+      -webkit-filter: grayscale(100%);
+              filter: grayscale(100%);
+      -webkit-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
+      transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
+      -o-transition: filter 0.3s ease-in-out, color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+      transition: filter 0.3s ease-in-out, color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+      transition: filter 0.3s ease-in-out, color 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out; }
+    .carousel .slide:hover .item-image {
+      -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+              transform: scale(1.1);
+      -webkit-transform-origin: bottom;
+          -ms-transform-origin: bottom;
+              transform-origin: bottom;
+      -webkit-filter: initial;
+              filter: initial;
+      -webkit-transition: -webkit-filter 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -webkit-transform-origin 0.3s ease-in-out;
+      transition: -webkit-filter 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -webkit-transform-origin 0.3s ease-in-out;
+      -o-transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out, transform-origin 0.3s ease-in-out;
+      transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out, transform-origin 0.3s ease-in-out;
+      transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out, transform-origin 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -webkit-transform-origin 0.3s ease-in-out, -ms-transform-origin 0.3s ease-in-out; }
+      .carousel .slide:hover .item-image:after {
+        content: '';
+        width: 100%;
+        border-bottom: 5px solid #f7600e;
+        position: absolute;
+        bottom: 15px;
+        -webkit-border-radius: 10px;
+                border-radius: 10px;
+        -webkit-transition: border 0.3s ease-in-out;
+        -o-transition: border 0.3s ease-in-out;
+        transition: border 0.3s ease-in-out; }
+    .carousel .slide:hover .soc-icons {
+      -webkit-filter: initial;
+              filter: initial; }
+    .carousel .slide:hover .item-description h3 {
+      color: #333;
+      -webkit-transition: color 0.3s ease-in-out;
+      -o-transition: color 0.3s ease-in-out;
+      transition: color 0.3s ease-in-out; }
+    .carousel .slide:hover .item-description p {
+      color: #333;
+      -webkit-transition: color 0.3s ease-in-out;
+      -o-transition: color 0.3s ease-in-out;
+      transition: color 0.3s ease-in-out; }
+
+.pagination .pg-items {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .pagination .pg-items li:not(:last-child) {
+    margin-right: 10px; }
+  .pagination .pg-items li {
+    -webkit-border-radius: 50%;
+            border-radius: 50%; }
+    .pagination .pg-items li a {
+      display: block;
+      width: 10px;
+      height: 10px;
+      background-color: #c4c6c9;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      -webkit-transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+      transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+      -o-transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+      transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+      transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; }
+      .pagination .pg-items li a:hover {
+        background-color: #f7600e;
+        -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+                transform: scale(1.2); }
+
+@media (max-width: 1023px) {
+  .carousel .mask {
+    padding: 100px 0; }
+    .carousel .mask .slide {
+      width: 50%; } }
+
+@media (max-width: 767px) {
+  .carousel .mask {
+    padding: 100px 0; }
+    .carousel .mask .slide {
+      width: 100%; } }
 
 .wrapper {
   position: relative;

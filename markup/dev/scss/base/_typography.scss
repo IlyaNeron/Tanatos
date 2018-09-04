@@ -24,6 +24,7 @@ h6, .h6,
   &:last-child {
     margin: 0;
   }
+
 }
 
 h1, .h1 {
@@ -37,6 +38,7 @@ h1, .h1 {
   @include media("<phone") {
     font-size: 30px;
   }
+
 }
 
 h2, .h2 {
@@ -50,6 +52,7 @@ h2, .h2 {
   @include media("<phone") {
     font-size: 25px;
   }
+
 }
 
 h3, .h3 {
@@ -62,6 +65,7 @@ h3, .h3 {
   @include media("<phone") {
     font-size: 14px;
   }
+
 }
 
 a {
@@ -74,6 +78,7 @@ a {
   &:focus {
     color: $base-link-hover-color;
   }
+  
 }
 
 p {

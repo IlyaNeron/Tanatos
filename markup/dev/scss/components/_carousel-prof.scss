@@ -1,0 +1,180 @@
+.carousel {
+    position: relative;
+
+    .mask {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding: 100px 30px;
+
+        .slideset {
+            width: 100% !important;
+            display: inline-block;
+            white-space: nowrap;
+            line-height: 0;
+          }
+
+      }
+
+    .slide {
+      width: (100%/4);
+      padding: 0 15px 0 15px;
+      display: inline-block;
+      line-height: 1.5;
+      white-space: normal;
+
+
+      .item-description {
+
+        h3 {
+          text-transform: uppercase;
+          font-size: 25px;
+          font-weight: $h3-weight;
+          text-align: center;
+          color: #c4c6c9;
+          @include animate(color);
+        }
+  
+        p {
+          text-align: center;
+          color: #c4c6c9;
+          font-size: 14px;
+          @include animate(color);
+          margin: 0;
+        }
+  
+      }
+
+      .item-image {
+        width: 100%;
+        padding-bottom: 15px;
+        position: relative;
+        filter: grayscale(100%);
+        @include animate(transform transform-origin filter);
+  
+        img {
+          width: 100%;
+          display: block;
+        }
+  
+      }
+
+      .soc-icons {
+        filter: grayscale(100%);
+        @include animate(filter color background-color);
+      }
+
+      &:hover {
+
+        .item-image {
+          transform: scale(1.1);
+          transform-origin: bottom;
+          filter: initial;
+          @include animate(filter transform transform-origin);
+  
+          &:after {
+            content: '';
+            width: 100%;
+            border-bottom: 5px solid $orange;
+            position: absolute;
+            bottom: 15px;
+            border-radius: 10px;
+            @include animate(border);
+          }
+  
+        }
+  
+        .soc-icons {
+          filter: initial;
+        }
+  
+        .item-description {
+  
+          h3 {
+            color: $black;
+            @include animate(color);
+          }
+  
+          p {
+            color: $black;
+            @include animate(color);
+          }
+  
+        }
+  
+      }
+
+    }
+
+}
+
+.pagination {
+
+    .pg-items {
+        display: flex;
+        @extend %listreset;
+        justify-content: center;
+
+        li:not(:last-child) {
+          margin-right: 10px;
+        }
+
+        li {
+            border-radius: 50%;
+
+            a {
+                display: block;
+                width: 10px;
+                height: 10px;
+                background-color: #c4c6c9;
+                border-radius: 50%;
+                @include animate(background-color transform);
+
+                &:hover {
+                background-color: $orange;
+                transform: scale(1.2);
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+
+@include media('<tablet') {
+
+    .carousel {
+
+        .mask {
+            padding: 100px 0;
+
+          .slide {
+            width: 50%;
+          }
+
+       }
+
+    }
+
+}
+
+
+@include media('<phone') {
+    
+    .carousel {
+
+        .mask {
+            padding: 100px 0;
+
+          .slide {
+            width: 100%;
+          }
+
+       }
+
+    }
+
+}
